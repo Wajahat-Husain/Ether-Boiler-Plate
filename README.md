@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Ethers Boilerplate
+Welcome to the Ethers Boilerplate repository! This project provides a simple and efficient way to kickstart your journey into decentralized application (DApp) development. The boilerplate is designed to work with Ethereum-based smart contracts and simplifies the process of setting up your development environment, connecting to a blockchain network, and interacting with smart contracts using Ethers.js.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Functionality](#functionality)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+These instructions will guide you on how to set up your local development environment and use this boilerplate for your own projects.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Easy setup for Ethers.js and Ethereum-based smart contracts
+- Integration with MetaMask for user authentication and transactions
+- Front-end using React and Material-UI for a responsive and modern interface
+- Display transaction history and token details for users
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before you start, ensure that you have the following installed on your machine:
 
-### `npm run build`
+- [Node.js](https://nodejs.org/) v16.17.0 or later
+- [npm](https://www.npmjs.com/) v9.4.1 or later
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+git clone https://github.com/Wajahat-Sudozai/Ethers-Boiler-Plate.git
+```
 
-### `npm run eject`
+2. Change to the project directory
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```shell
+cd Ethers-Boiler-Plate
+```
+3. Install dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```shell
+npm install  
+```
+4. Open `/src/config/ContractConfig.json` add your contract configrations, currently is
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```shell
+{
+    "0x11155111_Contract_Address": "",
+    "0x97_Contract_Address": "",
+    "0x80001_Contract_Address": "",
+    "ABI": []
+}
+```
+5. Start the React development server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```shell
+npm start
+```
+6. Open your browser and navigate to http://localhost:3000 to see the application.
 
-## Learn More
+### Functionality
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Users can connect their MetaMask wallet to interact with the smart contract.
+- Users can view their transaction history and token details.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Dependencies
 
-### Code Splitting
+Before using this repository, you must have the following dependencies installed and running:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [node-ether-web3-boilerplate](https://github.com/Wajahat-Sudozai/Node-ether-web3-boilerplate.git) - a Node.js server that this repository depends on for functionality.
+Make sure to install and start your Node repository before using this repository.
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you would like to contribute to this project, please follow these steps:
 
-### Making a Progressive Web App
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/my-new-feature`)
+5. Create a new Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the [MIT License](LICENSE.md).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
